@@ -6,7 +6,10 @@ function App() {
   return (
     <div>
       <div className="bg-[#F1F5FE] rounded-bl-[191px] h-1/2 w-full z-[-1] absolute top-0 left-0" />
-      <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 mt-24">
+      <div
+        role="Background"
+        className="flex flex-col items-center justify-center gap-2 sm:gap-3 mt-24"
+      >
         <h1 className="font-extrabold text-xl sm:text-3xl text-[#293356]">
           Simple, traffic-based pricing
         </h1>
@@ -17,7 +20,10 @@ function App() {
         <img src={patternCircles} alt="circles" className="absolute z-[-1]" />
       </div>
 
-      <div className="sm:flex sm:items-center sm:justify-center">
+      <div
+        role="Price card container"
+        className="sm:flex sm:items-center sm:justify-center"
+      >
         <PriceCard />
       </div>
     </div>

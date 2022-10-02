@@ -51,11 +51,15 @@ export default function PriceCard() {
 
   return (
     <main
+      role="Price card component"
       className="my-24 mx-6 max-w-[540px] min-w-[327px] py-6 sm:py-10 px-8 sm:px-10 
       flex flex-col items-center justify-center rounded-lg
       shadow-2xl bg-[#FFFFFF]"
     >
-      <div className="w-full flex flex-wrap items-center justify-center sm:justify-between">
+      <div
+        role="Price card header"
+        className="w-full flex flex-wrap items-center justify-center sm:justify-between"
+      >
         <p className="font-extrabold text-xs sm:text-sm text-light-text order-1">
           {views} page views
         </p>
@@ -77,7 +81,10 @@ export default function PriceCard() {
         />
       </div>
 
-      <div className="relative flex items-center justify-center mt-10 gap-3 sm:gap-4">
+      <div
+        role="price card switch"
+        className="relative flex items-center justify-center mt-10 gap-3 sm:gap-4"
+      >
         <LabelComponent text="Monthly Billing" />
         <SwitchComponent
           monthlyBilling={monthlyBilling}
@@ -93,13 +100,18 @@ export default function PriceCard() {
 
       <hr className="border border-[#ECF0FB] w-[calc(100%+3rem+3rem)] mt-10" />
 
-      <div className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8">
+      <div
+        role="Price card footer"
+        className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8"
+      >
         <div className="flex flex-col gap-3">
           <CreateBenefits text="Unlimited websites" />
           <CreateBenefits text="100% data ownership" />
           <CreateBenefits text="Email reports" />
         </div>
         <button
+          id="start-trial"
+          name="Start trial"
           type="button"
           className="mt-8 sm:mt-0 py-3 px-12 bg-dark-text rounded-full font-extrabold text-[#BECDFF] text-xs hover:text-white"
         >
