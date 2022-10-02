@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <div className="bg-[#F1F5FE] rounded-bl-[191px] h-1/2 w-full z-[-1] absolute top-0 left-0" />
-      <div
-        role="Background"
+      <header
+        role="header"
         className="flex flex-col items-center justify-center gap-2 sm:gap-3 mt-24"
       >
         <h1 className="font-extrabold text-xl sm:text-3xl text-[#293356]">
@@ -18,14 +18,11 @@ function App() {
         </p>
 
         <img src={patternCircles} alt="circles" className="absolute z-[-1]" />
-      </div>
+      </header>
 
-      <div
-        role="Price card container"
-        className="sm:flex sm:items-center sm:justify-center"
-      >
+      <main role="main" className="sm:flex sm:items-center sm:justify-center">
         <PriceCard />
-      </div>
+      </main>
     </div>
   );
 }

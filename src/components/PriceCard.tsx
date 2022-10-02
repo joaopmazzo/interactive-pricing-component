@@ -50,14 +50,14 @@ export default function PriceCard() {
   }, [sliderValue, monthlyBilling]);
 
   return (
-    <main
-      role="Price card component"
+    <div
+      role="card"
       className="my-24 mx-6 max-w-[540px] min-w-[327px] py-6 sm:py-10 px-8 sm:px-10 
       flex flex-col items-center justify-center rounded-lg
       shadow-2xl bg-[#FFFFFF]"
     >
       <div
-        role="Price card header"
+        role="pricecardmain"
         className="w-full flex flex-wrap items-center justify-center sm:justify-between"
       >
         <p className="font-extrabold text-xs sm:text-sm text-light-text order-1">
@@ -82,7 +82,7 @@ export default function PriceCard() {
       </div>
 
       <div
-        role="price card switch"
+        role="pricecardswitch"
         className="relative flex items-center justify-center mt-10 gap-3 sm:gap-4"
       >
         <LabelComponent text="Monthly Billing" />
@@ -101,7 +101,7 @@ export default function PriceCard() {
       <hr className="border border-[#ECF0FB] w-[calc(100%+3rem+3rem)] mt-10" />
 
       <div
-        role="Price card footer"
+        role="pricecardfooter"
         className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8"
       >
         <div className="flex flex-col gap-3">
@@ -111,13 +111,13 @@ export default function PriceCard() {
         </div>
         <button
           id="start-trial"
-          name="Start trial"
+          name="start-trial"
           type="button"
           className="mt-8 sm:mt-0 py-3 px-12 bg-dark-text rounded-full font-extrabold text-[#BECDFF] text-xs hover:text-white"
         >
           Start my trial
         </button>
       </div>
-    </main>
+    </div>
   );
 }

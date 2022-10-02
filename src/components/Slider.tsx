@@ -14,13 +14,14 @@ const SliderComponent = ({
   setSliderValue,
 }: SliderComponentProps) => (
   <Slider.Root
-    role="Price card slider component"
+    role="slider"
     value={sliderValue}
     onValueChange={(data) => setSliderValue(data)}
-    // defaultValue={[50]}
+    dir="ltr"
+    min={0}
     max={100}
     step={20}
-    aria-label="View/price Slider"
+    name="views-price-slider"
     className="relative flex items-center w-full sm:w-[27.75rem] pt-10 pb-10 sm:pb-0 order-2 sm:order-3"
   >
     <Slider.Track className="bg-[#ECF0FB] relative flex-grow h-2 rounded-full overflow-hidden">

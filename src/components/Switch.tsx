@@ -15,6 +15,7 @@ const SwitchComponent = ({
     checked={monthlyBilling}
     onCheckedChange={setMonthlyBilling}
     defaultChecked={false}
+    name="discount-switch"
     className="bg-[#CFD8EF] w-11 h-6
       flex items-center rounded-full
       hover:bg-[#7AEADF]
