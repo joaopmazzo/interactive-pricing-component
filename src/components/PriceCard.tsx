@@ -55,10 +55,7 @@ export default function PriceCard() {
       flex flex-col items-center justify-center rounded-lg
       shadow-2xl bg-[#FFFFFF]"
     >
-      <main
-        role="main"
-        className="w-full flex flex-wrap items-center justify-center sm:justify-between"
-      >
+      <main className="w-full flex flex-wrap items-center justify-center sm:justify-between">
         <p className="font-extrabold text-xs sm:text-sm text-light-text order-1">
           {views} page views
         </p>
@@ -99,10 +96,7 @@ export default function PriceCard() {
 
       <hr className="border border-[#ECF0FB] w-[calc(100%+3rem+3rem)] mt-10" />
 
-      <footer
-        role="footer"
-        className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8"
-      >
+      <footer className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8">
         <div role="contentinfo" className="flex flex-col gap-3">
           <CreateBenefits text="Unlimited websites" />
           <CreateBenefits text="100% data ownership" />

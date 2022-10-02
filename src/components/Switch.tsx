@@ -12,6 +12,7 @@ const SwitchComponent = ({
   setMonthlyBilling,
 }: SwitchComponentProps) => (
   <Switch.Root
+    aria-label="discount switch"
     checked={monthlyBilling}
     onCheckedChange={setMonthlyBilling}
     defaultChecked={false}

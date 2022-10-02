@@ -16,6 +16,7 @@ const SliderComponent = ({
   <Slider.Root
     role="slider"
     aria-label="slider"
+  
     value={sliderValue}
     onValueChange={(data) => setSliderValue(data)}
     dir="ltr"
@@ -29,6 +30,7 @@ const SliderComponent = ({
       <Slider.Range className="absolute bg-[#A4F3EB] h-full" />
     </Slider.Track>
     <Slider.Thumb
+      aria-label="slider icon"
       className="w-10 h-10 rounded-full
       flex items-center justify-center
       bg-[#10D8C4] shadow-xl shadow-[#00FFE7]
