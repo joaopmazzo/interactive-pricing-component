@@ -51,13 +51,12 @@ export default function PriceCard() {
 
   return (
     <div
-      role="card"
       className="my-24 mx-6 max-w-[540px] min-w-[327px] py-6 sm:py-10 px-8 sm:px-10 
       flex flex-col items-center justify-center rounded-lg
       shadow-2xl bg-[#FFFFFF]"
     >
-      <div
-        role="pricecardmain"
+      <main
+        role="main"
         className="w-full flex flex-wrap items-center justify-center sm:justify-between"
       >
         <p className="font-extrabold text-xs sm:text-sm text-light-text order-1">
@@ -79,10 +78,10 @@ export default function PriceCard() {
           sliderValue={sliderValue}
           setSliderValue={setSliderValue}
         />
-      </div>
+      </main>
 
-      <div
-        role="pricecardswitch"
+      <section
+        role="contentinfo"
         className="relative flex items-center justify-center mt-10 gap-3 sm:gap-4"
       >
         <LabelComponent text="Monthly Billing" />
@@ -96,15 +95,15 @@ export default function PriceCard() {
             {width < 640 ? "-25%" : "25% discount"}
           </p>
         </div>
-      </div>
+      </section>
 
       <hr className="border border-[#ECF0FB] w-[calc(100%+3rem+3rem)] mt-10" />
 
-      <div
-        role="pricecardfooter"
+      <footer
+        role="footer"
         className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8"
       >
-        <div className="flex flex-col gap-3">
+        <div role="contentinfo" className="flex flex-col gap-3">
           <CreateBenefits text="Unlimited websites" />
           <CreateBenefits text="100% data ownership" />
           <CreateBenefits text="Email reports" />
@@ -112,12 +111,13 @@ export default function PriceCard() {
         <button
           id="start-trial"
           name="start-trial"
+          aria-label="start my trial"
           type="button"
           className="mt-8 sm:mt-0 py-3 px-12 bg-dark-text rounded-full font-extrabold text-[#BECDFF] text-xs hover:text-white"
         >
           Start my trial
         </button>
-      </div>
+      </footer>
     </div>
   );
 }
