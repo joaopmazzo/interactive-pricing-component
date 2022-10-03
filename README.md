@@ -51,16 +51,18 @@
 This project was created as the solution for [interactive-pricing-component](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8/hub/responsive-and-interactive-rating-component-PaLGhnSDDe) challenge on the [frontendmentor](https://www.frontendmentor.io/home) website.
 
 Desktop preview:
+
   <img src="./.github/desktop_screen.png" alt="desktop screen view" />
 
-Mobile preview: 
+Mobile preview:
+
   <img src="./.github/mobile_screen.png" alt="Mobile screen view" width="300px" />
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: React Hooks;
-:heavy_check_mark: Radix accessible components library;
-:heavy_check_mark: Mobile first;
+:heavy_check_mark: React Hooks;\
+:heavy_check_mark: Radix accessible components library;\
+:heavy_check_mark: Mobile first;\
 :heavy_check_mark: Responsive;
 
 ## :rocket: Technologies ##
@@ -71,6 +73,12 @@ The following tools were used in this project:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Radix-ui](https://www.radix-ui.com/)
 - [Github-pages](https://pages.github.com/)
+
+## :traffic_light: Page quality measurement ##
+
+<img src="./.github/page-quality.png" alt="Page quality measurement" width="300px" />
+
+Checked with [web.dev](https://web.dev/measure/)
 
 ## :white_check_mark: Requirements ##
 
