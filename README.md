@@ -51,9 +51,11 @@
 This project was created as the solution for [interactive-pricing-component](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8/hub/responsive-and-interactive-rating-component-PaLGhnSDDe) challenge on the [frontendmentor](https://www.frontendmentor.io/home) website.
 
 Desktop preview:
+
   <img src="./.github/desktop_screen.png" alt="desktop screen view" />
 
-Mobile preview: 
+Mobile preview:
+
   <img src="./.github/mobile_screen.png" alt="Mobile screen view" width="300px" />
 
 ## :sparkles: Features ##
