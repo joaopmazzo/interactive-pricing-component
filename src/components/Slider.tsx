@@ -16,7 +16,7 @@ const SliderComponent = ({
   <Slider.Root
     role="slider"
     aria-label="slider"
-  
+    aria-labelledby="slider_label"
     value={sliderValue}
     onValueChange={(data) => setSliderValue(data)}
     dir="ltr"
