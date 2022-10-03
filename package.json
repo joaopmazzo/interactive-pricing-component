@@ -2,7 +2,7 @@
   "name": "interactive-pricing-component",
   "private": true,
   "homepage": "https://joaopmazzo.github.io/interactive-pricing-component/",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "scripts": {
     "dev": "vite",

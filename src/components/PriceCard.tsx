@@ -96,10 +96,7 @@ export default function PriceCard() {
 
       <hr className="border border-[#ECF0FB] w-[calc(100%+3rem+3rem)] mt-10" />
 
-      <section
-        role="footer"
-        className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8"
-      >
+      <section className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8">
         <div role="contentinfo" className="flex flex-col gap-3">
           <CreateBenefits text="Unlimited websites" />
           <CreateBenefits text="100% data ownership" />
