@@ -6,7 +6,7 @@ interface CreateBenefitsProps {
 
 const CreateBenefits = ({ text }: CreateBenefitsProps) => (
   <div className="flex items-center gap-4">
-    <img src={IconCheck} alt="Check icon" />
+    <img src={IconCheck} alt="Check icon" className="w-[7px] h-[5px]" />
     <p className="font-semibold text-light-text text-xs">{text}</p>
   </div>
 );

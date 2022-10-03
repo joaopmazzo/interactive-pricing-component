@@ -39,7 +39,7 @@ const SliderComponent = ({
       bg-[#10D8C4] shadow-xl shadow-[#00FFE7]
       hover:cursor-pointer hover:bg-[#7AEADF]"
     >
-      <img src={IconSlider} alt="Slider icon" />
+      <img src={IconSlider} alt="Slider icon" className="w-[22px] h-[13px]" />
     </Slider.Thumb>
   </Slider.Root>
 );
