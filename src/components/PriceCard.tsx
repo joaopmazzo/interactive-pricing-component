@@ -55,7 +55,10 @@ export default function PriceCard() {
       flex flex-col items-center justify-center rounded-lg
       shadow-2xl bg-[#FFFFFF]"
     >
-      <main className="w-full flex flex-wrap items-center justify-center sm:justify-between">
+      <section
+        role="main"
+        className="w-full flex flex-wrap items-center justify-center sm:justify-between"
+      >
         <p className="font-extrabold text-xs sm:text-sm text-light-text order-1">
           {views} page views
         </p>
@@ -75,12 +78,9 @@ export default function PriceCard() {
           sliderValue={sliderValue}
           setSliderValue={setSliderValue}
         />
-      </main>
+      </section>
 
-      <section
-        role="contentinfo"
-        className="relative flex items-center justify-center mt-10 gap-3 sm:gap-4"
-      >
+      <section className="relative flex items-center justify-center mt-10 gap-3 sm:gap-4">
         <LabelComponent text="Monthly Billing" />
         <SwitchComponent
           monthlyBilling={monthlyBilling}
@@ -96,7 +96,10 @@ export default function PriceCard() {
 
       <hr className="border border-[#ECF0FB] w-[calc(100%+3rem+3rem)] mt-10" />
 
-      <footer className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8">
+      <section
+        role="footer"
+        className="flex flex-col sm:flex-row items-center justify-between w-full mt-6 sm:mt-8"
+      >
         <div role="contentinfo" className="flex flex-col gap-3">
           <CreateBenefits text="Unlimited websites" />
           <CreateBenefits text="100% data ownership" />
@@ -111,7 +114,7 @@ export default function PriceCard() {
         >
           Start my trial
         </button>
-      </footer>
+      </section>
     </div>
   );
 }

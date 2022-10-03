@@ -17,6 +17,9 @@ const SliderComponent = ({
     role="slider"
     aria-label="slider"
     aria-labelledby="slider_label"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={sliderValue[0]}
     value={sliderValue}
     onValueChange={(data) => setSliderValue(data)}
     dir="ltr"
